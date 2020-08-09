@@ -3,6 +3,7 @@ import './App.css';
 import { Navbar } from './Navbar/Navbar';
 import { Routing } from './Routing';
 import { Footer } from './Footer/Footer';
+import { withThemeProvider } from "./contexts/theme-context";
 
 function App() {
   return (
@@ -14,4 +15,4 @@ function App() {
   );
 }
 
-export default App;
+export default withThemeProvider(App);
