@@ -17,14 +17,14 @@ export function Project() {
 
     return (
         <div className={classes.WorkImages}>
-                    <Grid container spacing={8}>
+                    <Grid container spacing={4} >
                         {Projects.map(({ name, src, alt, slug, link }, index) => {
                             return (
                                 <Grid
                                     item
                                     xs={12}
                                     md={8}
-                                    lg={6}
+                                    lg={4}
                                     key={index + name}
                                 >
                                     <WorkProject

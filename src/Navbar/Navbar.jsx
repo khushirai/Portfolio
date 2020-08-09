@@ -24,7 +24,7 @@ const useStyles = makeStyles((theme) => ({
         justifyContent: "flex-end",
         alignItems: "center",
         flexGrow: 1,
-        textDecoration: "",
+        fontSize:"20px"
     },
     link: {
         margin: ".5rem",
@@ -56,6 +56,7 @@ export function Navbar() {
                                             href={href}
                                             color="inherit"
                                             className={classes.link}
+                                            underline="none"
                                         >
                                             {name}
                                         </Link>

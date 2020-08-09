@@ -7,7 +7,9 @@ const useStyles = makeStyles({
     SkillsImages: {
         margin: "10rem",
     },
-
+    head:{
+        margin:"10rem"
+    },
     h4: {
         textAlign: "center"
         },
@@ -20,7 +22,14 @@ export function About() {
     const classes = useStyles();
 
     return (
-        <div className={classes.SkillsImages}>
+        <div>
+        <div className={classes.head}>
+        <Typography variant="body1">
+        Here are the tools and technolgies, I am well versed with and i have used in my projects 
+        </Typography>
+        </div>
+      
+        <div  className={classes.SkillsImages}>
             <Grid className={classes.grid} container spacing={6}>
                 {Skills.map(({ name, src, alt }, index) => {
                     return (
@@ -30,6 +39,7 @@ export function About() {
                     );
                 })}
             </Grid>
+            </div>
         </div>
     );
 }

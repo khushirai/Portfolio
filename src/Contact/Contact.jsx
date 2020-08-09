@@ -17,13 +17,16 @@ const useStyles = new makeStyles({
     },
     text: {
         margin: "60px",
+        fontFamily:'Segoe UI'
     },
     header4: {
         margin: "10px 60px 0px 60px",
+        fontFamily:'Segoe UI'
     },
     headerText:{
         marginTop:"60px",
-        marginLeft:"60px"
+        marginLeft:"60px",
+        fontFamily:'Segoe UI'
     }
 });
 

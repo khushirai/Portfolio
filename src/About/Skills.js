@@ -73,5 +73,15 @@ export const Skills=[
         name:"Heroku",
         src:"heroku.jpeg",
         alt:"heroku"
+    },
+    {
+        name:"Postman",
+        src:"postman.png",
+        alt:"postman"
+    },
+    {
+        name:"Bulma",
+        src:"bulma.png",
+        alt:"bulma"
     }
 ];

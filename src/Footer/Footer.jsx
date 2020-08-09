@@ -12,16 +12,20 @@ const useStyles = makeStyles({
         flexGrow: 4,
     },
     footerColor: {
-        backgroundColor: "#2a6592",
+        backgroundColor: "#7395AE",
         marginTop:"10rem"
     },
     heading: {
         marginBottom: "1rem",
     },
-    InstagramIcon: {
+    AllIcons: {
         flexGrow: 1,
         marginRight: "5px",
     },
+    icon:{
+            color: "#000"
+        
+    }
 });
 
 export function Footer() {
@@ -35,17 +39,17 @@ export function Footer() {
                 <Typography variant="body1">Toronto, Ontario</Typography>
                 <Typography variant="body1">778-241-9289</Typography>
             </Grid>
-            <Grid item className={classes.InstagramIcon}>
+            <Grid item className={classes.AllIcons}>
                 <Button size="large">
-                <a href="mailto:khushirai9596@gmail.com"> <EmailIcon/></a>
+                <a className={classes.icon} href="mailto:khushirai9596@gmail.com" > <EmailIcon/></a>
                    
                 </Button>
                 <Button size="large">
-                    <a target="_blank" href="www.linkedin.com/in/khushi-rai-21a91b158">
+                    <a className={classes.icon} href="https://www.linkedin.com/in/khushirai2020">
                         <LinkedInIcon />
                     </a>
                 </Button>
-                <Button size="large">
+                <Button size="large" className={classes.icon}>
                     <GitHubIcon />
                 </Button>
             </Grid>
