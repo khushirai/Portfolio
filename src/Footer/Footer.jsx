@@ -1,58 +1,121 @@
 import React from "react";
-import { Typography, makeStyles, Button, Grid } from "@material-ui/core";
+import { Typography, makeStyles, Button, Grid, Link } from "@material-ui/core";
+import { Link as RouterLink } from "react-router-dom";
 import EmailIcon from "@material-ui/icons/Email";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import GitHubIcon from "@material-ui/icons/GitHub";
+import InstagramIcon from "@material-ui/icons/Instagram";
+import TwitterIcon from "@material-ui/icons/Twitter";
+import FacebookIcon from "@material-ui/icons/Facebook";
 
 const useStyles = makeStyles({
     footnote: {
         fontSize: "20px",
         textAlign: "left",
-        marginLeft: "60px",
-        flexGrow: 4,
-    },
+    }, 
     footerColor: {
-        backgroundColor: "#7395AE",
-        marginTop:"10rem"
+        backgroundColor: "#000",
     },
-    heading: {
-        marginBottom: "1rem",
+    text: {
+        marginLeft: "10rem",
     },
     AllIcons: {
+        display: "flex",
+        justifyContent: "flex-end",
         flexGrow: 1,
-        marginRight: "5px",
     },
-    icon:{
-            color: "#000"
-        
-    }
+    icon: {
+        color: "#fff",
+    },
+    header: {
+        marginBottom: "2rem",
+        marginTop: "2rem",
+    },
+    footerText:{
+        textAlign:"center",
+        marginTop:"2rem"
+    },
+    button: {
+        boxShadow: "none",
+        "&:hover": {
+            boxShadow: "none",
+            transition: ".25s ease-in-out",
+            backgroundColor: "transparent",
+        },
+    },
 });
 
 export function Footer() {
     const classes = useStyles();
     return (
-        <Grid container className={classes.footerColor}>
-            <Grid item className={classes.footnote}>
-                <Typography className={classes.heading} variant="h4">
-                    Khushi Rai
+        <div className={classes.footerColor} >
+        <Grid container>
+            <Grid item className={classes.text}>
+                <Typography className={classes.header} variant="h5">
+                    Explore
                 </Typography>
-                <Typography variant="body1">Toronto, Ontario</Typography>
-                <Typography variant="body1">778-241-9289</Typography>
+                <Link underline="none" to="/about" component={RouterLink}>
+                    <Typography variant="h6">About</Typography>
+                </Link>
+                <Link underline="none" to="/project" component={RouterLink}>
+                    <Typography variant="h6">Projects</Typography>
+                </Link>
+                <Link underline="none" to="/contact" component={RouterLink}>
+                    <Typography variant="h6">Contact</Typography>
+                </Link>
             </Grid>
             <Grid item className={classes.AllIcons}>
-                <Button size="large">
-                <a className={classes.icon} href="mailto:khushirai9596@gmail.com" > <EmailIcon/></a>
-                   
+                <Button className={classes.button} size="large">
+                    <a
+                        className={classes.icon}
+                        href="mailto:dev.khushirai@gmail.com"
+                    >
+                        <EmailIcon />
+                    </a>
                 </Button>
-                <Button size="large">
-                    <a className={classes.icon} href="https://www.linkedin.com/in/khushirai2020">
+                <Button className={classes.button} size="large">
+                    <a
+                        className={classes.icon}
+                        href="https://www.linkedin.com/in/khushirai2020"
+                    >
                         <LinkedInIcon />
                     </a>
                 </Button>
-                <Button size="large" className={classes.icon}>
-                    <GitHubIcon />
+                <Button className={classes.button} size="large">
+                    <a
+                        className={classes.icon}
+                        href="https://github.com/khushirai"
+                    >
+                        <GitHubIcon />
+                    </a>
+                </Button>
+                <Button className={classes.button} size="large">
+                    <a
+                        className={classes.icon}
+                        href="https://www.instagram.com/rai__khushi"
+                    >
+                        <InstagramIcon />
+                    </a>
+                </Button>
+                <Button className={classes.button} size="large">
+                    <a
+                        className={classes.icon}
+                        href="https://www.twitter.com/khushir12286505"
+                    >
+                        <TwitterIcon />
+                    </a>
+                </Button>
+                <Button className={classes.button} size="large">
+                    <a
+                        className={classes.icon}
+                        href="https://www.facebook.com/khushi.rai.33865854"
+                    >
+                        <FacebookIcon />
+                    </a>
                 </Button>
             </Grid>
         </Grid>
+        <Typography className={classes.footerText} variant="h6">Copyright &#169; 2020. All rights reserved</Typography>
+        </div>
     );
 }

@@ -58,7 +58,7 @@ export function Contact() {
                 </Grid>
                 <Grid item xs={12} lg={6}>
                     <Typography className={classes.headerText} variant="h5">
-                        Email : khushirai9596@gmail.com
+                        Email : dev.khushirai@gmail.com
                     </Typography>
                     <Typography className={classes.header4} variant="h5">
                         778-241-9289

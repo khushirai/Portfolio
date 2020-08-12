@@ -25,7 +25,6 @@ export function About() {
         <div>
         <div className={classes.head}>
         <Typography variant="body1">
-        Here are the tools and technolgies, I am well versed with and i have used in my projects 
         </Typography>
         </div>
       
