@@ -4,9 +4,7 @@ import { Link as RouterLink } from "react-router-dom";
 import EmailIcon from "@material-ui/icons/Email";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import GitHubIcon from "@material-ui/icons/GitHub";
-import InstagramIcon from "@material-ui/icons/Instagram";
 import TwitterIcon from "@material-ui/icons/Twitter";
-import FacebookIcon from "@material-ui/icons/Facebook";
 
 const useStyles = makeStyles({
     footnote: {
@@ -14,8 +12,8 @@ const useStyles = makeStyles({
         textAlign: "left",
     }, 
     footerColor: {
-        backgroundColor: "#000",
-    },
+        backgroundColor: "#000"
+  },
     text: {
         marginLeft: "10rem",
     },
@@ -44,6 +42,14 @@ const useStyles = makeStyles({
         },
     },
 });
+
+
+// hook a backend service node js for email service creating service
+// add authentication to yr project so we can just create or add project usng a form
+// include sitemap.xml file
+// learn next.js we need to make this server side
+// make sure you have email cleint to send an email to u
+// improve card design
 
 export function Footer() {
     const classes = useStyles();
@@ -92,25 +98,9 @@ export function Footer() {
                 <Button className={classes.button} size="large">
                     <a
                         className={classes.icon}
-                        href="https://www.instagram.com/rai__khushi"
-                    >
-                        <InstagramIcon />
-                    </a>
-                </Button>
-                <Button className={classes.button} size="large">
-                    <a
-                        className={classes.icon}
                         href="https://www.twitter.com/khushir12286505"
                     >
                         <TwitterIcon />
-                    </a>
-                </Button>
-                <Button className={classes.button} size="large">
-                    <a
-                        className={classes.icon}
-                        href="https://www.facebook.com/khushi.rai.33865854"
-                    >
-                        <FacebookIcon />
                     </a>
                 </Button>
             </Grid>
