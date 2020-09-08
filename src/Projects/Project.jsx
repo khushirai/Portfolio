@@ -23,7 +23,8 @@ export function Project() {
                                 <Grid
                                     item
                                     xs={12}
-                                    md={8}
+                                    sm={8}
+                                    md={6}
                                     lg={4}
                                     key={index + name}
                                 >

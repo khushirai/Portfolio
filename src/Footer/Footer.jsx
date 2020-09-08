@@ -21,11 +21,14 @@ const useStyles = makeStyles({
         display: "flex",
         justifyContent: "flex-end",
         flexGrow: 1,
+        marginRight:"10rem"
     },
     icon: {
         color: "#fff",
     },
     header: {
+        color:"#ff4",
+
         marginBottom: "2rem",
         marginTop: "2rem",
     },
@@ -43,20 +46,12 @@ const useStyles = makeStyles({
     },
 });
 
-
-// hook a backend service node js for email service creating service
-// add authentication to yr project so we can just create or add project usng a form
-// include sitemap.xml file
-// learn next.js we need to make this server side
-// make sure you have email cleint to send an email to u
-// improve card design
-
 export function Footer() {
     const classes = useStyles();
     return (
         <div className={classes.footerColor} >
-        <Grid container>
-            <Grid item className={classes.text}>
+        <Grid container xs={4} sm={6} md={8} lg={12}>
+            <Grid item  className={classes.text}>
                 <Typography className={classes.header} variant="h5">
                     Explore
                 </Typography>

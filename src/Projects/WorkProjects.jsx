@@ -101,7 +101,7 @@ export function WorkProjects() {
                     <Grid container spacing={4}>
                     {workProject.images.map((image, index) => {
                         return (
-                            <Grid item xs={12} lg={6} key={image + index}>
+                            <Grid item xs={12} sm={8} lg={6} key={image + index}>
                                 <CardMedia
                                      className={classes.image}
                                     src={image}
@@ -122,7 +122,7 @@ export function WorkProjects() {
                         </Button>
                     </a>
                     <Grid container justify="space-between">
-                        <Grid item xs={6}>
+                        <Grid item>
                             {prevProject >= 0 ? (
                                 
                                 <Link
@@ -141,7 +141,7 @@ export function WorkProjects() {
                                 </Link>
                             ) : null}
                         </Grid>
-                        <Grid item xs={6}>
+                        <Grid item >
                             {Projects.length > nextProject ? (
                                 <Link
                                     underline="none"

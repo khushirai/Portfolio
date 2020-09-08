@@ -57,24 +57,13 @@ export const Projects = [
         images: ["/wikipedia1.png", "/wikipedia2.png"],
     },
     {
-        name: "Task Manager",
-        src: "task.jpg",
-        alt: "Task Manager",
-        slug: "task",
-        description: "Tools and Technologies: ",
-        link: "https://khushi-weather-application.herokuapp.com/",
-        summary:
-            "roitibulum rhoncus est pellentesque elit. Augue eget arcu dictum varius duis at. Lacus sed turpis tincidunt id aliquet. Laoreet id donec ultrices tincidunt arcu. In eu mi bibendum neque egestas. Tristique nulla aliquet enim tortor at auctor urna nunc. Mauris pharetra et ultrices neque ornare aenean. Eget lorem dolor sed viverra ipsum nunc aliquet. Odio facilisis mauris sit amet massa vitae tortor condimentum. Nunc scelerisque viverra mauris in. Arcu risus quis varius quam quisque id diam vel quam. Nunc mattis enim ut tellus elementum. Nullam eget felis eget nunc lobortis. Cursus eget nunc scelerisque viverra mauris in aliquam. Donec adipiscing tristique risus nec feugiat.",
-        images: ["/wikipedia1.png", "/wikipedia2.png"],
-    },
-    {
         name: "Password Generator",
         src: "password.jpg",
         alt: "Password Generator",
         slug: "password",
         description: "Tools and Technologies: Angular, Bulma",
         link: "https://password-generator-dun.vercel.app/",
-        summary: "",
+        summary: "Password Generator is a simple application built in Angular that helps user to generate random password. The application asks for the length of the password, usage of symbols, letters or special signs from the user and generates a random password on the based of needs of the user ",
         images: ["/password1.png", "/password2.png"],
     },
     {
@@ -85,7 +74,7 @@ export const Projects = [
         description: "Tools and Technologies: Angular, Bulma",
         link: "https://typing-game-delta.vercel.app/",
         summary:
-            "It is a simple typing game that has a randomly generated text everytime you play and expects you to type the same exact text as the randomly generated text. It displays the text as green in color if the user is typing in factual manner. It also displays a 'Success' message if you have gone throught the whole game correctly, by default the Success message is hidden. However, it displays the text color in red if inaccurate text is typed. The random text generated every time is achieved through faker, a javascript library which is used to create fake amount of texts. Bulma, a CSS framework has been used for styling purposes ",
+            "It is a simple typing game that has a randomly generated text everytime you play and expects you to type the same exact text as the randomly generated text. It displays the text as green in color if the user is typing in factual manner. It also displays a 'Success' message if you have gone throughout the whole game correctly, by default the Success message is hidden. However, it displays the text color in red if inaccurate text is typed. The random text generated every time is achieved through faker, a javascript library which is used to create fake amount of texts. Bulma, a CSS framework has been used for styling purposes ",
         images: ["/typing1.png", "/typing2.png"],
     },
 ];
